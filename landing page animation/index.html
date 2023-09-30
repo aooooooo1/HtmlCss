@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Logo Design</h1>
+            <nav>
+                <a href="#">menu</a>
+                <a href="#">menu2</a>
+                <a href="#">menu3</a>
+                <a href="#">menu4</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <p>A vision for livable,</p>
+            <p>sustainable and</p>
+            <p>affordable homes</p>
+        </div>
+    </main>
+    <script>
+        $(window).on("load", function(){
+            $("header, main").addClass("active");
+        });
+    </script>
+</body>
+</html>
