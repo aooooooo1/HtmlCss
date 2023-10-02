@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+    <script src="https://kit.fontawesome.com/ae152a3960.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="y.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title">Youtube</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+    <!-- 비디오 플레이어 -->
+    <section class="player">
+        <video controls src="Phone Camera.mp4"></video>
+    </section>
+    <div class="infoAndList">
+        <!-- 정보 -->
+        <section class="info">
+            <!-- 제목:해시태그,제목,조회수 -->
+            <div class="metadata">
+                <ul class="hashtags">
+                    <li>#Dream Coding</li>
+                    <li>#Dream coders</li>
+                    <li>#ellie</li>
+                </ul>
+                <div class="titleAndButton">
+                    <span class="title clamp">Clone Coding: youtube mobile website 유튜브 모바일 웹사이트 따라
+                        만들기 | 프론트엔드 개발자 입문편: html, css, javascript 드림코딩과 함께하는 프론트엔드 실전 입문편 바로 입장해서 들어보세요!!
+                    </span>
+                    <button class="moreBtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+                <span class="views">1M views 1 month ago</span>
+            </div>
+            <!-- 액션버튼들 -->
+            <ul class="actions">
+                <li>
+                    <button>
+                        <i class="active fas fa-thumbs-up"></i>
+                        <span>1K</span>
+                    </button>
+                </li>
+                <li><button><i class=" fas fa-thumbs-down"></i>
+                    <span>0</span></button></li>
+                <li><button><i class="fas fa-share"></i>
+                    <span>공유</span></button></li>
+                <li><button><i class="fas fa-plus"></i>
+                    <span>저장</span></button></li>
+                <li><button><i class="fas fa-font-awesome-flag"></i>
+                    <span>신고</span></button></li>
+            </ul>
+            <!-- 게시자 --> 
+            <div class="channel">
+                <div class="metadata">
+                    <img src="../img/cat.jpg" alt="">
+                    <div class="info">
+                        <span class="name">드림코딩</span>
+                        <span class="susbscribers">1M subscribers</span>
+                    </div>
+                </div>
+                <button class="subscribe">subscribe</button>
+            </div>
+        </section>
+        <!-- 목록 -->
+        <section class="upNext">
+            <span class="title">Up next</span>
+            <ul>
+                <li class="item">
+                    <div class="img">
+                        <img src="../img/mystery.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <span class="title">프론트엔드 강의 프론드엔드 개발자가 되고 싶다면? 웹개발
+                            입문자편 강의를 시작합니다. html css javascript 실전 프로젝트
+                        </span>
+                        <span class="name">드림코딩</span>
+                        <span class="views">82K views</span>
+                    </div>
+                    <butoon class="moreBtn"><i class="fas fa-ellipsis-v"></i></butoon>
+                </li>
+                <li class="item">
+                    <div class="img">
+                        <img src="../img/mystery.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <span class="title">프론트엔드 강의 프론드엔드 개발자가 되고 싶다면? 웹개발
+                            입문자편 강의를 시작합니다. html css javascript 실전 프로젝트
+                        </span>
+                        <span class="name">드림코딩</span>
+                        <span class="views">82K views</span>
+                    </div>
+                    <butoon class="moreBtn"><i class="fas fa-ellipsis-v"></i></butoon>
+                </li>
+                <li class="item">
+                    <div class="img">
+                        <img src="../img/mystery.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <span class="title">프론트엔드 강의 프론드엔드 개발자가 되고 싶다면? 웹개발
+                            입문자편 강의를 시작합니다. html css javascript 실전 프로젝트
+                        </span>
+                        <span class="name">드림코딩</span>
+                        <span class="views">82K views</span>
+                    </div>
+                    <butoon class="moreBtn"><i class="fas fa-ellipsis-v"></i></butoon>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        const moreBtn = document.querySelector('.titleAndButton .moreBtn');
+        const title = document.querySelector('.titleAndButton .title');
+        moreBtn.addEventListener('click',()=>{
+            title.classList.toggle('clamp');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&family=Roboto:wght@400&display=swap');
+body{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    list-style: none;
+}
+button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+:root{
+    /* 컬러 */
+    --white-color:#fff;
+    --black-color:#140a00;
+    --blue-color:#045fd4;
+    --red-color:#ff0000;
+    --grey-dark-color:#909090;
+    --grey-light-color:#e0e0e0;
+    /* 사이즈 */
+    --padding:12px;
+    --avatar-size:36px;
+    --font-large:18px;
+    --font-medium:14px;
+    --font-small:12px;
+    --font-micro:10px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 헤더 */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+header .logo{
+    font-size: calc( var(--font-large)*1.3);
+}
+header .logo i{
+    color: var(--red-color);
+}
+header .icons {
+    font-size: var(--font-large);
+    display: flex;
+    align-items: center;
+}
+header .icons .fa-search{
+    margin-right: var(--padding);
+}
+/* 비디오 플레이어 */
+.player{
+    text-align: center;
+    background-color: var(--black-color);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.player video{
+    width: 100%;
+    height: 100%;
+    max-width: 768px;
+}
+/* 정보 */
+.infoAndList > .info{
+    padding: var(--padding);
+}
+.info .metadata .hashtags{
+    display: flex;
+    font-size: var(--font-small);
+    color: var(--blue-color);
+}
+.info .metadata .hashtags li{
+    margin-right: var(--padding);
+}
+.info .metadata .titleAndButton{
+    display: flex;
+}
+.info .metadata .titleAndButton .title.clamp{
+    font-size: var(--font-large);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.info .metadata .titleAndButton .title{
+    font-size: var(--font-large);
+}
+.info .metadata .titleAndButton .moreBtn{
+    height: 100%;
+    padding: 0 10px 10px 10px;
+}
+.info .views{
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+/* 액션버튼 */
+.actions{
+    display: flex;
+    justify-content: space-around;
+    margin: var(--padding) 0;
+}
+.actions button{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-medium);
+    margin: 0 auto;
+    color: var(--grey-dark-color);
+}
+.actions button i{
+    margin:0 auto calc(var(--padding) / 1.5);
+    font-size: 20px;
+}
+.actions button span{
+    margin: 0 auto;
+}
+i.active{
+    color: var(--blue-color);
+}
+/* 게시자 */
+.channel{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--grey-light-color);
+    border-bottom: 1px solid var(--grey-light-color);
+}
+.channel .metadata{
+    display: flex;
+    align-items: center;
+}
+.channel .metadata img{
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+
+}
+.channel .metadata .info{
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+}
+.channel .metadata .info .name{
+    font-size: var(--font-medium);
+}
+.channel .metadata .info .susbscribers{
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+.channel .subscribe {
+    text-transform: uppercase;
+    color: var(--red-color);
+    font-size: var(--font-medium);
+}
+/* 목록 */
+.upNext{
+    padding: 0 var(--padding);
+}
+.upNext > .title{
+    font-size: var(--font-medium);
+    color: var(--grey-dark-color);
+    margin-bottom: calc(var(--padding) / 2);
+}
+.upNext > ul {
+    margin-top: var(--padding);
+}
+.upNext .item{
+    display: flex;
+    margin-bottom: var(--padding)
+}
+.upNext .item .img{
+    flex: 1 1 40%;
+    position: relative;
+    padding-top: 20%;
+    overflow: hidden;
+    margin-right: var(--padding);
+}
+.upNext .img img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.upNext .item .info{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+}
+.upNext .item .info .title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.item > .info > .name{
+    color: var(--grey-light-color);
+    font-size: var(--font-medium);
+}
+.upNext .item .moreBtn{
+    flex: 1 1 10%;
+    text-align: center;
+}
+.infoAndList{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width:768px){
+    .infoAndList{
+        flex-direction: row;
+    }
+    .upNext{
+        padding-top: var(--padding);
+    }
+}
