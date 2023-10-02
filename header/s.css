@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+:root{
+    --navColor:#2A293E;
+    --textColor:#f1f3f5;
+    --logoColor:#E08119;
+    --gapM:12px;
+    --gapS:8px;
+    --logoSize:24px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+header{
+    background-color: var(--navColor);
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--gapS) var(--gapM);
+}
+.navbar .logo{
+    font-size: var(--logoSize);
+    color: var(--textColor);
+    padding: var(--gapS);
+}
+.navbar .logo i{
+    color: var(--logoColor);
+}
+.navbar .menu , .icons{
+    display: flex;
+    list-style: none;
+}
+.navbar .menu li{
+    padding: var(--gapS) var(--gapM);
+}
+.navbar .menu li:hover{
+    background-color: var(--logoColor);
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+    color: var(--textColor);
+}
+.icons{
+    color: var(--textColor);
+}
+.icons i{
+    padding: var(--gapS) var(--gapM);
+}
+.navToggle{
+    display: none;
+    position: absolute;
+    right: calc( var(--gapM)*3); 
+    top: calc(var(--gapM)*1.3);
+    font-size: calc(var(--gapM)*2);
+    color: #E08119; 
+}
+@media screen and (max-width:768px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .menu{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar .icons{
+        display: none;
+        width: 100%;
+        justify-content: center;
+    }
+    .navToggle{
+        display: flex;
+    }
+    .menu.active, .icons.active{
+        display: flex;
+    }
+}

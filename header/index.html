@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ae152a3960.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-hat-wizard fa-bounce"></i>
+            <a href="#">Dream Coding</a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Bookings</a></li>
+        </ul>
+        <ul class="icons">
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+            <a href="#" class="navToggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+    </nav>
+</header>
+</body>
+<script>
+    const toBtn = document.querySelector('.navToggle');
+    const menu = document.querySelector('.menu');
+    const icon = document.querySelector('.icons');
+    toBtn.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        icon.classList.toggle('active');
+    });
+</script>
+</html>
