@@ -1,0 +1,118 @@
+/* Header
+---------------------------------------------------------*/
+
+Nextour
+- Home
+- About
+- Destinations
+- Discover
+- Sign in
+
+/* Home
+---------------------------------------------------------*/
+
+Discover The World With Us
+
+Sit vehicula est dolor eget adipiscing amet tempor est ultrices. Vel ultrices euismod ut phasellus integer. Massa leo vestibulum at nec amet sed sociis luctus enim.
+
+Discover 
+
+
+/* About
+---------------------------------------------------------*/
+
+About Us
+
+Travel, enjoy and explore new places with us
+
+Felis pellentesque a enim tristique lobortis nulla bibendum. Pulvinar ornare in pharetra adipiscing. Sociis diam quis justo turpis id sed et laoreet. Bibendum et amet sed ultrices eleifend. Aliquam scelerisque mi sit id adipiscing.
+
+Know More
+
+
+/* Destinations
+---------------------------------------------------------*/
+
+Destinations
+Most Popular
+
+France
+Paris
+
+Canada
+Moraine Lake
+
+Switzerland
+Lake Thun
+
+Brazil
+Rio de Janeiro
+
+United Arab Emirates 
+Dubai
+
+
+/* Video 
+---------------------------------------------------------*/
+
+Tour 
+Most Recent 
+
+Recent Tour 
+Watch Video 
+
+/* Discover
+---------------------------------------------------------*/
+
+Discover 
+Beautiful places
+
+El Nido, Philippines 
+10 tour available 
+10 Days 
+
+Otok, Slovenia 
+8 Tour available 
+5 Days 
+
+Hvar, Croatia 
+5 tour available
+3 Days
+
+/* Offer
+---------------------------------------------------------*/
+
+Special Offer 
+5 days and 5 nights 
+
+Santorini Tour 
+
+Don't miss the opportunity to visit one of the most beautiful and 
+famous islands in the world! 
+
+$899 - $780
+
+Get Offer 
+
+/* Footer 
+---------------------------------------------------------*/
+
+Nextour
+
+Sagittis vestibulum scelerisque dui pharetra. Sed nulla fermentum mattis mus id. Massa sed netus et viverra.
+
+Links 
+- Home  
+- About 
+- Destinations 
+- Discover 
+
+Company
+- Terms & Conditions 
+- Privacy Policy 
+
+Support 
+- Help & FAQs 
+- Contact Us 
+
+Copyright © Taurus Code 2023. All Rights Reserved
