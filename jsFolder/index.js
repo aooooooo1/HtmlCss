@@ -1,17 +1,9 @@
 'use strict'
-let globalName = 'g n';
-console.log(globalName);
-
 //const , ``백틱 활용하기 
 const char = 'c';
 console.log(`value: ${char}, type: ${typeof char}`);
 
-//function
-function print(){
-    console.log('hello')
-}
-print(); //-> 이방법 보다는 파라미터로 메세지를 넘기는게 좋다.
-
+//function 파라미터로 넘기기
 function out(message){
     console.log(message);
 };
@@ -26,7 +18,7 @@ change(me);
 console.log(me);
 
 //배열형태를 파라미터로 보네기 
-function out(...areys){
+function outary(...areys){
     for(let i = 0; i < areys.length; i++){
         console.log(areys[i]);
     }
@@ -35,16 +27,19 @@ function out(...areys){
         console.log(arey);
     }
 }
-out('asd','fff','zxcc'); 
+outary('asd','fff','zxcc'); 
 
 //밖에서 안에 있는 내역을 볼수 없다.
-function out(){
+function outside(){
     let parent = 'parent';
     function outIn(){
         let child = 'in';
+        console.log(parent);
     }
-    //console.log(child); 자식의 child를 볼수 없다.
+    outIn();
+    //console.log(child); //자식의 child를 볼수 없다.
 }
+outside();
 
 //return
 function sum(a, b){
@@ -99,5 +94,5 @@ ary.pop();
 console.log(ary);
 //앞에서 넣기 : unshift , 앞에서 빼기 : shift 
 // splice(1,1)->1부터 1개만 지움 
-
 console.log(ary.indexOf('melon'));//indexOf스트링 은 몇번째인지 알려준다.
+
