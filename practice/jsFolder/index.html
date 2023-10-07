@@ -15,21 +15,71 @@
             color: lightblue;
             background-color: orange;
         }
+        .container{
+            display: grid;
+            border: 1px solid lightblue;
+        }
+        .choiseBox{
+            border: 1px solid lightslategray;
+        }
+        @media screen and (min-width: 600px){
+            .container{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .img{
+            width: 100%;
+        }
+        .img img{
+            width: 100%;
+        }
+        .listBtn{
+            cursor: pointer;
+        }
+        .circle{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+        }
+        .circle>img{
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <h2 id="title">운동</h2>
-    <form action="" name="myform">
-        <input type="text" name="myText" placeholder="enter">
-        <button type="button" id="before">before추가</button>
-        <button type="button" id="btn">추가</button>
-        <button type="button" id="target-remove">target remove</button>
-    </form>
-    <ul class="list">
-        <li class="item" id="target">스쿼트
-            <button type="button" class="removeBtn">X</button>
-        </li>
-    </ul>
-    <p class="hello">안녕하세요.</p>
+    <div class="circle">
+        <img src="../../img/pointer.png" alt="">
+    </div>
+    <div class="container">
+        <div>
+            <h2 id="title">운동</h2>
+            <form action="" name="myform">
+                <input type="text" name="myText" placeholder="enter">
+                <button type="button" id="before">before추가</button>
+                <button type="button" id="btn">추가</button>
+                <button type="button" id="target-remove">target remove</button>
+            </form>
+            <ul class="list">
+                <li class="item" id="target">스쿼트
+                    <button type="button" class="removeBtn">X</button>
+                </li>
+            </ul>
+            <p class="hello">안녕하세요.</p>
+        </div>
+        <div class="choiseBox">
+            <div class="choise">
+                <h2>과일선택</h2>
+                <ul>
+                    <li class="listBtn" data-img="../../img/cat.jpg">cat</li>
+                    <li class="listBtn" data-img="../../img/mystery.jpg">mystery</li>
+                    <li class="listBtn" data-img="../../img/polynesia.jpg">polynesia</li>
+                </ul>
+            </div>
+            <div class="img">
+                <h2>name</h2>
+                <img id="img" src="" alt="과일사진">
+            </div> 
+        </div>
+    </div>
 </body>
 </html>

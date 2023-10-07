@@ -52,3 +52,24 @@ let removeBtn = document.querySelector('.removeBtn');
 removeBtn.addEventListener('click',function(event){
     event.target.parentNode.remove();
 })
+
+//12.과일리스트를 클릭하면 밑에 사진이 나오게하기
+let listBtn = document.getElementsByClassName('listBtn');//주의:배열이다. 
+let img = document.getElementById('img');
+let h2 = document.querySelector('.img>h2');
+for(let i = 0; i<listBtn.length; i++){
+    listBtn[i].addEventListener('click', function(e){ 
+        let datasetimg = e.target.dataset.img;
+        img.setAttribute('src',datasetimg);
+        h2.textContent=e.target.textContent;
+    });
+}
+//13.마우스다운했을때 위치에 박스가 오게하기
+let body = document.querySelector('html');
+let circle = document.querySelector('.circle');
+body.addEventListener('mousemove',function(e){
+    console.log(e.clientX,e.clientY)//현제화면에서 마우스 위치
+    console.log(e.pageX,e.pageY)//전체화면에서 마우스 위치
+    circle.style.left = (e.pageX)+'px';
+    circle.style.top = (e.pageY+10)+'px';
+})
