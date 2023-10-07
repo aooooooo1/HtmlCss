@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap');
 :root {
   /* Colors
   ___________________*/
@@ -198,8 +199,9 @@ body {
 }
 
 .nav__brand {
+  font-family: 'IBM Plex Sans KR', sans-serif;
   font-size: var(--fs-lg);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-medium);
   color: var(--color-title);
 }
 
@@ -300,16 +302,20 @@ body {
 }
 
 .home__title {
+  line-height: 1em;
+  text-align: center;
   font-size: var(--fs-biggest);
   color: var(--color-title);
   margin-bottom: 1rem;
 }
 
 .home__title span {
+  display: block;
   color: var(--color-primary);
 }
 
 .home__description {
+  line-height: 27px;
   margin-bottom: 3rem;
 }
 
@@ -324,6 +330,7 @@ body {
 }
 
 .about__description {
+  line-height: 27px;
   margin-bottom: 3rem;
 }
 

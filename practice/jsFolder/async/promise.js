@@ -3,7 +3,6 @@
 //state: pending -> fulfilled or rejected
 //**1 PRODUCER
 const promise1 = new Promise((resolve, reject)=>{
-    //promise를 만드는순간 executor콜백함수 실행됨
     console.log('const프로미스1함수 1초간 실행후 executor콜백함수 실행됨');
     setTimeout(()=>{
         //resolve('seoungjin')//스트링값을 넣어서 제공함
