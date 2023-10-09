@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ksjPf</title>
+    <title>김성진 포트폴리오</title>
     <link rel="shortcut icon" href="assets/img/ksj.png" type="image/png">
     <!--==================== Google Fonts =======================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
     <header id="header" class="header">
         <nav class="nav container">
             <a href="index.html" class="nav__brand">
-                김성진<span> ITportfolio</span>
+                my<span> IT</span> portfolio
             </a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -40,16 +40,16 @@
                         <a href="#about" class="nav__link">Profile</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#destination" class="nav__link">Detail</a>
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
                     </li>
                     <li class="nav__item">
                         <a href="#discover" class="nav__link">Discover</a>
                     </li>
-                    <li class="nav__item">
+                    <!-- <li class="nav__item">
                         <a href="javascript:void(0)" class="btn btn--primary">
                             수정하기
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
                 <span class="nav__close">
                     <i id="nav-close" class="ri-close-line"></i>
@@ -95,21 +95,129 @@
                         연락처 : 010.7613.9012 <br>
                         E-mail : pdqovvarxx@naver.com 
                     </p>
+                    <span class="section__subtitle">My past</span>
                     <h2 class="section__title">Experience & Education</h2>
                     <p class="about__description">
-                        2023.02 ~ 2023.08 : SW개발과정(프론트,백엔드)[DW ACADEMY]
+                        2023.02 ~ 2023.08 : SW개발과정(프론트,백엔드)[DW ACADEMY]<br>
                         2021.10 ~ 2023.01 : 수족관 영세자영업<br>
                         2019.02 ~ 2021.09 : 대전보건대학교 치기공과 중퇴 <br>
                         2017.02 ~ 2018.11 : 육군제17보병사단전역
                     </p>
+                    <span class="section__subtitle">Used</span>
+                    <h2 class="section__title">Skills</h2>
+                    <p class="about__description">
+                        React &nbsp;
+                        Java &nbsp;
+                        CSS &nbsp;
+                        javaScriot &nbsp;
+                        Oracle
+                    </p>
                     <!-- <a href="javascript:void(0)" class="btn btn--primary">Know More</a> -->
                 </div>
-                <img src="assets/img/about.jpg" alt="" class="about__img">
+                <img src="assets/img/ksjprofile.jpeg" alt="" class="about__img">
             </div>
         </section>
 
+        <!--==================== "portfolio" =======================-->
+        <section id="portfolio" class="video section">
+            <div class="section__header">
+                <span class="section__subtitle">Portfolio</span>
+                <h2 class="section__title">DW cinema</h2>
+            </div>
+            <div class="d-grid video__wrapper container">
+                <div class="video__content">
+                    <video controls id="video-tour" class="video__tour">
+                        <source  src="assets/video/cinema main home page (scrolling).mp4" type="video/mp4">
+                    </video>
+                    <div class="video__info">
+                        <button id="video-btn" class="video__btn">
+                            <i id="video-icon" class="ri-play-fill"></i>
+                        </button>
+                        <div class="video__info-wrapper">
+                            <span class="video__info-title">
+                                Recent Tour
+                            </span>
+                            <p class="video__info-description">
+                                Watch Video
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video__content">
+                    <video controls id="video-tour" class="video__tour">
+                        <source  src="assets/video/support.mp4" type="video/mp4">
+                    </video>
+                    <div class="video__info">
+                        <button id="video-btn" class="video__btn">
+                            <i id="video-icon" class="ri-play-fill"></i>
+                        </button>
+                        <div class="video__info-wrapper">
+                            <span class="video__info-title">
+                                Recent Tour
+                            </span>
+                            <p class="video__info-description">
+                                Watch Video
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="destination__wrapper container swiper">
+                <div class="swiper-wrapper">
+                    <!--======== destination 1 ===========-->
+                    <div class="destination__item swiper-slide">
+                        <img src="assets/img/destination1.jpg" alt="" class="destination__img">
+                        <div class="destination__info">
+                            <p class="destination__country">France</p>
+                            <h3 class="destination__name">Paris</h3>
+                        </div>
+                    </div>
+                    <!--======== destination 2 ===========-->
+                    <div class="destination__item swiper-slide">
+                        <img src="assets/img/destination2.jpg" alt="" class="destination__img">
+                        <div class="destination__info">
+                            <p class="destination__country">Canada</p>
+                            <h3 class="destination__name">Moraine Lake</h3>
+                        </div>
+                    </div>
+                    <!--======== destination 3 ===========-->
+                    <div class="destination__item swiper-slide">
+                        <img src="assets/img/destination3.jpg" alt="" class="destination__img">
+                        <div class="destination__info">
+                            <p class="destination__country">Switzerland</p>
+                            <h3 class="destination__name">Lake Thun</h3>
+                        </div>
+                    </div>
+                    <!--======== destination 4 ===========-->
+                    <div class="destination__item swiper-slide">
+                        <img src="assets/img/destination4.jpg" alt="" class="destination__img">
+                        <div class="destination__info">
+                            <p class="destination__country">Brazil</p>
+                            <h3 class="destination__name">Rio de Janeiro</h3>
+                        </div>
+                    </div>
+                    <!--======== destination 5 ===========-->
+                    <div class="destination__item swiper-slide">
+                        <img src="assets/img/destination5.jpg" alt="" class="destination__img">
+                        <div class="destination__info">
+                            <p class="destination__country">United Arab Emirates</p>
+                            <h3 class="destination__name">Dubai</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--========= Swiper navigation buttons ========-->
+                <div class="swiper__navigation">
+                    <div class="swiper__prev swiper__button">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <div class="swiper__next swiper__button">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--================ Destination ===================-->
-        <section id="destination" class="destination section">
+        <section  class="destination section">
             <div class="section__header">
                 <span class="section__subtitle">Destinations</span>
                 <h2 class="section__title">Most Popular</h2>
@@ -169,33 +277,7 @@
             </div>
         </section>
 
-        <!--==================== Video =======================-->
-        <section class="video section">
-            <div class="section__header">
-                <span class="section__subtitle">Tour</span>
-                <h2 class="section__title">Most Recent</h2>
-            </div>
-            <div class="d-grid video__wrapper container">
-                <div class="video__content">
-                    <video id="video-tour" class="video__tour">
-                        <source src="assets/video/video.mp4" type="video/mp4">
-                    </video>
-                    <div class="video__info">
-                        <button id="video-btn" class="video__btn">
-                            <i id="video-icon" class="ri-play-fill"></i>
-                        </button>
-                        <div class="video__info-wrapper">
-                            <span class="video__info-title">
-                                Recent Tour
-                            </span>
-                            <p class="video__info-description">
-                                Watch Video
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
         <!--==================== Discover =======================-->
         <section id="discover" class="discover section">
@@ -319,11 +401,10 @@
         <div class="d-grid footer__wrapper container">
             <div class="footer__content">
                 <h3 class="footer__brand">
-                    Nex<span>tour</span>
+                    my<span> IT</span> portfolio
                 </h3>
                 <p class="footer__description">
-                    Sagittis vestibulum scelerisque dui pharetra. Sed nulla fermentum mattis mus id. Massa sed netus et
-                    viverra.
+                    Even in web development, there is always a beginning and an end. You have the ability to write code from the starting point to the last line and finish with a variety of projects.
                 </p>
                 <div class="social">
                     <ul class="social__list">
@@ -376,16 +457,16 @@
                 </ul>
             </div>
             <div class="footer__content">
-                <h4 class="footer__title">Company</h4>
+                <h4 class="footer__title">Connect to..</h4>
                 <ul class="footer__list">
                     <li class="footer__item">
                         <a href="#" class="footer__link">
-                            Terms & Conditions
+                            김성진 GitHub
                         </a>
                     </li>
                     <li class="footer__item">
                         <a href="#" class="footer__link">
-                            Privacy Policy
+                            포트폴리오 기획서
                         </a>
                     </li>
                 </ul>
@@ -395,19 +476,19 @@
                 <ul class="footer__list">
                     <li class="footer__item">
                         <a href="#home" class="footer__link">
-                            Help & FAQs
+                            수정하기
                         </a>
                     </li>
                     <li class="footer__item">
                         <a href="#about" class="footer__link">
-                            Contact Us
+                            Contact me
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
         <p class="footer__copyright container">
-            Copyright © Taurus Code 2023. All Rights Reserved
+            Copyright © Initiation and Termination 김성진 2023. All Rights Reserved
         </p>
     </footer>
 
