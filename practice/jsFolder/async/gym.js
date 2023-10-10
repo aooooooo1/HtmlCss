@@ -23,7 +23,15 @@ helloClass.classList.remove('orange');
 let liNew = document.createElement('li');
 
 //10.인풋텍스트를 적고 추가를 누르면 리스트에 추가되는 코드 만들기
-//12.추가버튼을 누르면 생성리스트옆에 x버튼도 같이 생성하기 ->10번과 함께
+//12.추가버튼을 누르면 생성리스트옆에 x버튼도 같이 생성하기 ->10번과 함께(10분)
+
+
+
+
+
+
+
+
 let btnTag = document.querySelector('#btn');
 btnTag.addEventListener('click',function(){
     let inVel = inputTag.value.trim();//트림을 쓰면 string으로 변환된다.
@@ -51,7 +59,10 @@ removeBtn.addEventListener('click',function(event){
     event.target.parentNode.remove();
 })
 
-//12.과일리스트를 클릭하면 밑에 사진이 나오게하기,제목도 바뀌기
+//12.과일리스트를 클릭하면 밑에 사진이 나오게하기,제목도 바뀌기(15분)
+
+
+
 let listBtn = document.getElementsByClassName('listBtn');//주의:배열이다. 
 let img = document.getElementById('img');
 let h2 = document.querySelector('.img>h2');
@@ -62,7 +73,7 @@ for(let i = 0; i<listBtn.length; i++){
         h2.textContent=e.target.textContent;
     });
 }
-//13.마우스다운했을때 위치에 박스가 오게하기
+//13.마우스무브 에픽트, 클릭 이펙트 구현하기
 let body = document.querySelector('html');
 let circle = document.querySelector('.circle');
 body.addEventListener('mousemove',function(e){
@@ -71,7 +82,6 @@ body.addEventListener('mousemove',function(e){
     circle.style.left = (e.pageX)+'px';
     circle.style.top = (e.pageY+10)+'px';
 })
-
 document.addEventListener('click', function(event) {
     const container = document.createElement('div');
     container.classList.add('fireC');
