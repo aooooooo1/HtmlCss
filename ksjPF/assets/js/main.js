@@ -129,3 +129,49 @@ sr.reveal(
 );
 sr.reveal(".discover__item", { interval: 200, origin: "top" });
 sr.reveal(".footer__content", { interval: 150 });
+
+
+
+const tabs = document.querySelector(".wrapper");
+const tabButton = document.querySelectorAll(".tab-button");
+const contents = document.querySelectorAll(".content");
+
+tabButton.forEach(button => {
+  button.addEventListener("click", () => {
+    const id = button.dataset.id;
+
+    // 모든 버튼에서 active 클래스 제거
+    tabButton.forEach(btn => btn.classList.remove("active"));
+    // 현재 클릭한 버튼에만 active 클래스 추가
+    button.classList.add("active");
+
+    // 모든 콘텐츠에서 active 클래스 제거
+    contents.forEach(content => content.classList.remove("active"));
+    
+    // 선택한 버튼에 해당하는 p 엘리먼트에만 active 클래스 추가
+    const element = document.getElementById(id);
+    element.classList.add("active");
+  });
+});
+
+const tabs1 = document.querySelector(".wrapper1");
+const tabButton1 = document.querySelectorAll(".tab-button1");
+const contents1 = document.querySelectorAll(".content1");
+
+tabButton1.forEach(button => {
+  button.addEventListener("click", () => {
+    const id = button.dataset.id;
+
+    // 모든 버튼에서 active 클래스 제거
+    tabButton1.forEach(btn => btn.classList.remove("active1"));
+    // 현재 클릭한 버튼에만 active 클래스 추가
+    button.classList.add("active1");
+
+    // 모든 콘텐츠에서 active 클래스 제거
+    contents1.forEach(content => content.classList.remove("active1"));
+    
+    // 선택한 버튼에 해당하는 p 엘리먼트에만 active 클래스 추가
+    const element = document.getElementById(id);
+    element.classList.add("active1");
+  });
+});

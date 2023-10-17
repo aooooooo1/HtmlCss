@@ -43,7 +43,7 @@
                         <a href="#portfolio" class="nav__link">Portfolio</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#discover" class="nav__link">Discover</a>
+                        <a href="#discover" class="nav__link">Contact</a>
                     </li>
                     <!-- <li class="nav__item">
                         <a href="javascript:void(0)" class="btn btn--primary">
@@ -78,7 +78,7 @@
                         Discover
                     </a> -->
                 </div>
-                <img src="assets/img/ini.jpeg" alt="" class="home__img" style="border-radius: 2rem; width: 350px;">
+                <!-- <img src="assets/img/ini.jpeg" alt="" class="home__img" style="border-radius: 2rem; width: 350px;"> -->
             </div>
         </section>
 
@@ -108,9 +108,9 @@
                     <p class="about__description">
                         React &nbsp;
                         Java &nbsp;
-                        CSS &nbsp;
                         javaScriot &nbsp;
-                        Oracle
+                        Oracle &nbsp;
+                        C#
                     </p>
                     <!-- <a href="javascript:void(0)" class="btn btn--primary">Know More</a> -->
                 </div>
@@ -250,22 +250,138 @@
                 </div>
             </div>
             <div class="section__header1">
-                <span class="offer__subtitle">역할과 구현내용</span>   
+                <span class="offer__subtitle1">역할과 구현내용</span>   
             </div>
-            <table class="offer__price1">
-                <tr>
-                    <td class="offer__price-now">주요역할</td>
-                    <td class="offer__price-before1">DW cinema 메인 홈, 고객센터, 마이페이지, 관리자페이지 Front작업 하였습니다. 간단한 Back작업으로 영화, 이벤트, 상품을 가져와 연결 하였습니다.</td>
-                </tr>
-                <tr>
-                    <td class="offer__price-now">슬라이더</td>
-                    <td class="offer__price-before1">슬라이더시 중앙에 위치하게 되는 영화정보는 input type hidden 으로 value값에 영화제목, 등급 ,상영시간 등을 숨겨 놓았습니다. swiper의 기능인 transitionStart을 활용해서 영화의 메인 순서가 슬라이드 될때마다 해당영화의 숨겨진 value값을 javascript에서 변수로 받아 미리 만들어 놓은 html에 넣어 주었습니다.</td>
-                </tr>
-                <tr>
-                    <td class="offer__price-now">사이드 네브바</td>
-                    <td class="offer__price-before1">사이드 메뉴의 top을 변수로 지정하고 스크롤시 상단에서 280px미만이면 위치를 고정시키고 그 이상 스크롤시 top의 변수와 스크롤한 top의 값이 더해져서 사이드 메뉴는 그만큼의 높이에서 고정됩니다.</td>
-                </tr>
-            </table>
+ 
+            <div class="wrapper container">
+                <div class="buttonWrapper">
+                  <button class="tab-button button123 active" style="border-top-left-radius: 10px;" data-id="home123">주요역할</button>
+                  <button class="tab-button button123" data-id="about123">Slider</button>
+                  <button class="tab-button button123" data-id="contact123">SideNav</button>
+                  <button class="tab-button button123" style="border-top-right-radius: 10px;" data-id="reb123">총평</button>
+                </div>
+                <div class="contentWrapper">
+                  <p class="content active" id="home123">
+                    DW cinema 메인 홈,<br> 고객센터,<br> 마이페이지,<br> 관리자페이지 Front작업 하였습니다. 간단한 Back작업으로 영화, 이벤트, 상품을 가져와 연결 하였습니다.
+                  </p>
+                  <p class="content" id="about123">
+                    슬라이더시 중앙에 위치하게 되는 영화정보는 input type hidden 으로 value값에 영화제목, 등급 ,상영시간 등을 숨겨 놓았습니다. swiper의 기능인 transitionStart을 활용해서 영화의 메인 순서가 슬라이드 될때마다 해당영화의 숨겨진 value값을 javascript에서 변수로 받아 미리 만들어 놓은 html에 넣어 주었습니다.
+                  </p>
+                  <p class="content" id="contact123">
+                    사이드 메뉴의 top을 변수로 지정하고 스크롤시 상단에서 280px미만이면 위치를 고정시키고 그 이상 스크롤시 top의 변수와 스크롤한 top의 값이 더해져서 사이드 메뉴는 그만큼의 높이에서 고정됩니다.
+                  </p>
+                  <p class="content" id="reb123">
+                    이번 프로젝트를 진행하면서 가장 크게 느꼈던 점은 학습과 성장 기회부분에서 많은것을 느꼈습니다.<br>
+                    구체적으로 팀프로젝트를 통해 기술적인 역량 뿐만 아니라 커뮤니케이션, 문제 해결, 팀워크 등 다양한 스킬을 향상시킬 수 있는 기회가 되어 가장 보람찼습니다.<br>
+                    팀워크적인 부분에서는 gitHub로 각 팀원들이 맞은 임무진행도를 공유하며 완성되어 가는 페이지를 보면서 뿌듯함을 느꼈습니다.<br>
+                    그렇게 공유되어 각 팀원들의 시선에서 바라보는 점에서 피드백을 수용해여 보다 나은 서비스를 제공 하고자 하였습니다.<br>
+                    중간에 팀원이 이탈하는 상황이 발생하였고 모두가 맡은 임무에서 플러스되어 일정부분에 대해서 차질이 생겼습니다.<br>
+                    이탈한 팀원의 작업 범위를 파악했고 긍적적인 태도로 오히려 남은 팀원끼리 끈끈하게 뭉쳐서 프로젝트를 종료시킬수 있었습니다.<br>
+                    앞으로는 이런 상황에서 미리 대비할 수 있는 계획을 세우는것도 중요하다고 느꼈습니다.
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="d-grid1 offer__wrapper container">
+                <div class="offer__content">
+                    <span class="offer__subtitle">Portfolio</span>
+                    <p class="offer__duration">game</p>
+                    <h3 class="offer__title"><span style="color: #1c6470;">3D</span> Action</h3>
+                    <p class="offer__description">
+                        간단하게 즐기는 케쥬얼 게임입니다.
+                    </p>
+                    <table class="offer__price">
+                        <tr>
+                            <td class="offer__price-now">개발기간</td>
+                            <td class="offer__price-before">23.09 ~ 23.09(3주)</td>
+                        </tr>
+                        <tr>
+                            <td class="offer__price-now">개발인원</td>
+                            <td class="offer__price-before">1명</td>
+                        </tr>
+                        <tr>
+                            <td class="offer__price-now">언어</td>
+                            <td class="offer__price-before">C#</td>
+                        </tr>
+                        <tr>
+                            <td class="offer__price-now">프레임워크</td>
+                            <td class="offer__price-before">unity, Visual Studio</td>
+                        </tr>
+                    </table>
+                    
+                    <!-- <a href="javascript:void" class="btn btn--primary">Get Offer</a> -->
+                </div>
+                <img src="assets/img/a33.png" alt="" class="offer__img">
+            </div>
+            <div class="d-grid video__wrapper1 container">
+                <div class="video__content">
+                    <video controls id="video-tour" class="video__tour">
+                        <source  src="assets/video/a3d action (1).mp4" type="video/mp4">
+                    </video>
+                    <div class="video__info">
+                        <button id="video-btn" class="video__btn">
+                            <i id="video-icon" class="ri-play-fill"></i>
+                        </button>
+                        <div class="video__info-wrapper">
+                            <span class="video__info-title">
+                                Recent Tour
+                            </span>
+                            <p class="video__info-description">
+                                Watch Video
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="destination__wrapper container swiper">
+                <div class="swiper-wrapper">
+                    <!--======== destination 1 ===========-->
+                    <div class="destination__item swiper-slide">
+                        <img src="assets/img/a31.png" alt="" class="destination__img">
+                    </div>
+                    <!--======== destination 2 ===========-->
+                    <div class="destination__item swiper-slide">
+                        <img src="assets/img/a32.png" alt="" class="destination__img">
+                    </div>
+                    <!--======== destination 3 ===========-->
+                    <div class="destination__item swiper-slide">
+                        <img src="assets/img/a33.png" alt="" class="destination__img">
+                    </div>
+                    <!--======== destination 4 ===========-->
+                    <div class="destination__item swiper-slide">
+                        <img src="assets/img/a34.png" alt="" class="destination__img">
+                    </div>
+                </div>
+                <!--========= Swiper navigation buttons ========-->
+                <div class="swiper__navigation">
+                    <div class="swiper__prev swiper__button">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <div class="swiper__next swiper__button">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="section__header1">
+                <span class="offer__subtitle1">역할과 구현내용</span>   
+            </div>
+            <div class="wrapper container">
+                <div class="buttonWrapper1">
+                    <button class="tab-button button123 active" style="border-top-left-radius: 10px;" data-id="home123123">주요내용</button>
+                    <button class="tab-button button123" style="border-top-right-radius: 10px;" data-id="reb123123">총평</button>
+                </div>
+                <div class="contentWrapper">
+                    <p class="content active" id="home123123">
+                    처음으로 개인 프로젝트를 진행하였습니다. 간단하게 즐길수 있는 게임을 만들어 보았습니다. 유니티를 활용했으며 java와 비슷한 c#으로 사고능력을 향상시킬 수 있었습니다.
+                    </p>
+                    <p class="content" id="reb123123">
+                        개인 프로젝트를 통해서 문제해결능력과 프로젝트 관리 경험, 자기 주도적인 학습을 통해서 새로운 기술과 도구를 습득하는 능력을 향상 시킬 수 있었습니다.
+                    </p>
+                </div>
+            </div>
+
+
             
         </section>
         
@@ -273,118 +389,38 @@
         <!--==================== Discover =======================-->
         <section id="discover" class="discover section">
             <div class="section__header">
-                <span class="section__subtitle">Discover</span>
-                <h2 class="section__title">Beautiful places</h2>
+                <!-- <span class="section__subtitle">Discover</span> -->
+                <h2 class="section__title">Contact</h2>
             </div>
-            <div class="d-grid discover__wrapper container">
-                <!--========== discover 1 ===========-->
-                <div class="discover__item">
-                    <div class="discover__img-wrapper">
-                        <img src="assets/img/discover1.jpg" alt="" class="discover__img">
-                        <span class="discover__price">
-                            $599
-                        </span>
-                    </div>
-                    <div class="discover__info">
-                        <h3 class="discover__name">
-                            El Nido, Philippines</h3>
-                        <p class="discover__tour">
-                            10 tour available
-                        </p>
-                        <p class="discover__duration">
-                            10 Days
-                        </p>
-                        <a href="javascript:void(0)" class="discover__btn">
-                            Book Now
-                        </a>
-                    </div>
-                </div>
-                <!--========== discover 2 ===========-->
-                <div class="discover__item">
-                    <div class="discover__img-wrapper">
-                        <img src="assets/img/discover2.jpg" alt="" class="discover__img">
-                        <span class="discover__price">
-                            $560
-                        </span>
-                    </div>
-                    <div class="discover__info">
-                        <h3 class="discover__name">
-                            Otok, Slovenia</h3>
-                        <p class="discover__tour">
-                            8 Tour available
-                        </p>
-                        <p class="discover__duration">
-                            5 Days
-                        </p>
-                        <a href="javascript:void(0)" class="discover__btn">
-                            Book Now
-                        </a>
-                    </div>
-                </div>
-                <!--========== discover 3 ===========-->
-                <div class="discover__item">
-                    <div class="discover__img-wrapper">
-                        <img src="assets/img/discover3.jpg" alt="" class="discover__img">
-                        <span class="discover__price">
-                            $499
-                        </span>
-                    </div>
-                    <div class="discover__info">
-                        <h3 class="discover__name">Hvar, Croatia</h3>
-                        <p class="discover__tour">
-                            5 tour available
-                        </p>
-                        <p class="discover__duration">
-                            3 Days
-                        </p>
-                        <a href="javascript:void(0)" class="discover__btn">
-                            Book Now
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== Offer =======================-->
-        <section class="offer section">
-            <div class="d-grid offer__wrapper container">
-                <div class="offer__content">
-                    <span class="offer__subtitle">Special Offer</span>
-                    <p class="offer__duration">5 days and 5 nights</p>
-                    <h3 class="offer__title">Santorini Tour</h3>
-                    <p class="offer__description">
-                        Don't miss the opportunity to visit one of the most beautiful and
-                        famous islands in the world!
-                    </p>
-                    <div class="offer__price">
-                        <span class="offer__price-before">$899</span>
-                        <span class="offer__price-now">$780</span>
-                    </div>
-                    <a href="javascript:void" class="btn btn--primary">Get Offer</a>
-                </div>
-                <img src="assets/img/offer.jpg" alt="" class="offer__img">
-            </div>
-        </section>
-
-        <!--==================== Newsletter =======================-->
-        <section class="newsletter section">
             <div class="d-grid newsletter__wrapper container">
                 <div class="newsletter__content">
-                    <h2 class="newsletter__title">Subscribe to our newsletter</h2>
+                    <h2 class="newsletter__title">김성진</h2>
                     <p class="newsletter__description">
-                        Receive exclusive offers, latest news, updates and discounts.
+                        pdqovvarxx@navmer.com <br> 
+                        010-7613-9012
                     </p>
                 </div>
                 <form class="newsletter__form">
                     <div class="form__group">
-                        <input type="email" class="form__input" placeholder="Email Address" required>
-                        <button class="btn btn--primary">
-                            Subscribe
-                        </button>
+                        <!-- <input type="email" class="form__input" placeholder="Email Address" required> -->
+                        <div class="btn btn--primary">
+                            <a href="https://github.com/aooooooo1" class="alink" target="_blank">
+                                김성진 GitHub 바로가기
+                            </a>
+                        </div>
+                        <div class="btn btn--primary">
+                            <a href="https://www.miricanvas.com/v/12gehq6" class="alink" target="_blank">
+                                포트폴리오 기획서 살펴보기
+                            </a>
+                        </div>
                     </div>
                 </form>
             </div>
+
+
+
         </section>
+
     </main>
 
     <!--==================== Footer =======================-->
@@ -395,32 +431,10 @@
                     my<span> IT</span> portfolio
                 </h3>
                 <p class="footer__description">
-                    Even in web development, there is always a beginning and an end. You have the ability to write code from the starting point to the last line and finish with a variety of projects.
+                    웹 개발에서도 항상 시작과 끝이 있습니다. 마치 코드의 시작점부터 마지막 행까지 작성하듯, 
+                    어떠한 프로젝트든 끝을 보는 역량을 가지고 있습니다. 시작을 하면 끝을 보는 개발자로, 
+                    새로운 도전에도 언제나 준비돼 있습니다. Initiation 과 Termination 의 IT정신으로 임하겠습니다.
                 </p>
-                <div class="social">
-                    <ul class="social__list">
-                        <li class="social__item">
-                            <a href="javascriot:void(0)" class="social__link">
-                                <i class="ri-facebook-fill"></i>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a href="javascriot:void(0)" class="social__link">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a href="javascriot:void(0)" class="social__link">
-                                <i class="ri-instagram-fill"></i>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a href="javascriot:void(0)" class="social__link">
-                                <i class="ri-youtube-fill"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
             <div class="footer__content">
                 <h4 class="footer__title">Links</h4>
@@ -462,7 +476,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__content">
+            <!-- <div class="footer__content">
                 <h4 class="footer__title">Support</h4>
                 <ul class="footer__list">
                     <li class="footer__item">
@@ -476,7 +490,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <p class="footer__copyright container">
             Copyright © Initiation and Termination 김성진 2023. All Rights Reserved
