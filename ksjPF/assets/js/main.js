@@ -175,3 +175,16 @@ tabButton1.forEach(button => {
     element.classList.add("active1");
   });
 });
+
+function changeTab(tabIndex) {
+  const tabButtons = document.querySelectorAll('.tab-button2');
+  const tabContents = document.querySelectorAll('.tab-content2');
+
+  // Deactivate all tabs
+  tabButtons.forEach(button => button.classList.remove('active'));
+  tabContents.forEach(content => content.classList.remove('active'));
+
+  // Activate the clicked tab
+  document.getElementById(`tab${tabIndex}`).classList.add('active');
+  document.getElementById(`content${tabIndex}`).classList.add('active');
+}

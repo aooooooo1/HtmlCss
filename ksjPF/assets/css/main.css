@@ -849,9 +849,19 @@ body {
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
 }
+.wrapper2 {
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
+}
 .buttonWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.buttonWrapperM {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .buttonWrapper1 {
   display: grid;
@@ -884,6 +894,22 @@ body {
 .active1 {
   background-color: white;
 }
+.active2 {
+  background-color: white;
+}
+.tab-content2 {
+  display: none;
+}
+
+.tab-content2.active {
+  display: block;
+}
+.tabDiv{
+  color: #757575;
+  font-size: 20px;
+  text-align: center;
+  padding: 1rem;
+}
 /* p {
   text-align: left;
   padding: 10px;
@@ -894,6 +920,10 @@ body {
   padding: 30px 40px 30px;
 }
 .content1 {
+  display: none;
+  padding: 30px 40px 30px;
+}
+.content2 {
   display: none;
   padding: 30px 40px 30px;
 }
